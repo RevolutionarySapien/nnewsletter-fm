@@ -1,0 +1,145 @@
+.main-div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58rem;
+  height: 40rem;
+  border-radius: 30px;
+  margin: 7rem auto;
+  /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+
+.text-div {
+  background-color: white;
+  width: 25rem;
+  height: 30rem;
+  padding: 0 3.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  background-color: white;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 1.8rem;
+}
+
+.join {
+  background-color: inherit;
+  margin-bottom: 1.5rem;
+}
+
+ul,
+li {
+  background-color: inherit;
+  list-style-type: circle;
+}
+
+li::marker {
+  font-size: 1.6rem;
+}
+
+ul {
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+form {
+  background-color: inherit;
+}
+
+label {
+  background-color: white;
+}
+
+input {
+  background-color: white;
+
+  border: rgb(89, 89, 89) 1px solid;
+  border-radius: 7px;
+  padding-left: 1rem;
+  height: 3rem;
+  width: 23.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  text-align: center;
+  line-height: 3em;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.image-div {
+  /* margin-left: 10rem; */
+  display: flex;
+  align-items: end;
+  height: 100%;
+  width: 27rem;
+  background-image: url("src/assets/images/illustration-sign-up-desktop.svg");
+  border-radius: 30px;
+  background-repeat: no-repeat;
+
+  /* background-attachment: fixed; */
+  background-position: left;
+  background-color: white;
+}
+
+input.ng-invalid.ng-touched {
+  border: solid red 1px;
+}
+
+span {
+  background-color: inherit;
+  opacity: 60%;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 25em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .main-div {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: fit-content;
+    height: 50rem;
+    width: 24.5rem;
+    align-items: start;
+    border-radius: 0;
+  }
+  .image-div {
+    height: 18.5rem;
+    border-radius: 10px;
+    width: 24.4rem;
+    height: 17.5rem;
+    grid-row: 1;
+    background-image: url("src/assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+  }
+  .text-div {
+    width: 22rem;
+    border-radius: 0;
+    height: fit-content;
+    padding: 1rem 1.5rem;
+  }
+
+  input {
+    width: 20rem;
+  }
+
+  button {
+    width: 21rem;
+  }
+}
